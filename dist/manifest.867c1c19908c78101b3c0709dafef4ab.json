@@ -1,0 +1,10 @@
+{
+  "name": "Moqa",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "publicPath": null,
+  "short_name": "Moqa",
+  "description": "Get direct answer and donate",
+  "background_color": "#ffffff"
+}

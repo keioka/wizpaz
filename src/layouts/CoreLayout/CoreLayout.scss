@@ -1,0 +1,36 @@
+@import 'base';
+
+.container {
+  min-height: 100vh;
+}
+
+.children {
+  min-height: calc(100vh - 48px);
+  background-color: $background;
+}
+
+.footer {
+  height: 10vh;
+  width: 100%;
+  background: #242525;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #17142D;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+}

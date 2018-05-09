@@ -1,0 +1,14 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+  z-index: 10000;
+  background: #FFF;
+  color: #222222;
+}

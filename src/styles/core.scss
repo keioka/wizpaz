@@ -1,0 +1,163 @@
+:global {
+  @import 'base';
+  @import 'device-sizes';
+  @import 'standard-classes';
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+  // Some best-practice CSS that's useful for most apps
+  // Just remove them if they're not what you want
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:600,700');
+
+  html {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    color: #2b2b2b;
+    background-color: $background;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    @include desktop {
+      font-size: 15px;
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+  a {
+    text-decoration: none !important;
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  [type=button]{
+    -webkit-appearance: none !important;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    // -webkit-text-fill-color: #fff !important;
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .transition-item {
+    animation-name: fadeInRight;
+    animation-duration: 500ms;
+  }
+
+  .react-autosuggest__container {
+    position: relative;
+    margin-bottom: 200px;
+  }
+
+  .react-autosuggest__input {
+    width: 240px;
+    height: 30px;
+    padding: 10px 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+  }
+
+  .react-autosuggest__input--focused {
+    outline: none;
+  }
+
+  .react-autosuggest__input--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .react-autosuggest__suggestions-container {
+    display: none;
+  }
+
+  .react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    top: 51px;
+    width: 280px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+  }
+
+  .react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+  }
+
+
+  div {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  img {
+    background: linear-gradient(214deg, #ededed, #38474b);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 17s ease infinite;
+    -moz-animation: AnimationName 17s ease infinite;
+    -o-animation: AnimationName 17s ease infinite;
+    animation: AnimationName 17s ease infinite;
+  }
+
+  @-webkit-keyframes AnimationName {
+    0%{background-position:75% 0%}
+    50%{background-position:26% 100%}
+    100%{background-position:75% 0%}
+  }
+  @-moz-keyframes AnimationName {
+    0%{background-position:75% 0%}
+    50%{background-position:26% 100%}
+    100%{background-position:75% 0%}
+  }
+  @-o-keyframes AnimationName {
+    0%{background-position:75% 0%}
+    50%{background-position:26% 100%}
+    100%{background-position:75% 0%}
+  }
+  @keyframes AnimationName {
+    0%{background-position:75% 0%}
+    50%{background-position:26% 100%}
+    100%{background-position:75% 0%}
+  }
+}

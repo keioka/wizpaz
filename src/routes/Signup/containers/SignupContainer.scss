@@ -1,0 +1,95 @@
+@import 'base';
+
+.container {
+  @extend .flex-column-center;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  width: 100%;
+  min-height: 530px;
+  background-color: inherit;
+  font-weight: 400;
+  padding-top: 1.5rem;
+  font-family: Poppins;
+  font-weight: bold;
+  min-height: 100vh;
+}
+
+.containerPrivacyPolicy {
+  font-weight: 400;
+  width: 60%;
+  @include mobile {
+    width: 90%;
+  }
+}
+
+.panel {
+  @extend .flex-column-center;
+  justify-content: center;
+  padding: 1.25rem;
+  width: 60%;
+  font-family: Poppins;
+  @include mobile {
+    width: 90%;
+  }
+}
+
+.or {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Poppins;
+}
+
+.btnPrivacyPolicy {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.progress {
+  margin-top: 5rem;
+}
+
+.panel {
+  @extend .flex-column-center;
+  justify-content: center;
+  padding: 1.25rem;
+  width: 60%;
+  font-family: Poppins;
+  @include mobile {
+    width: 90%;
+  }
+}
+
+.login {
+  @extend .flex-column-center;
+  justify-content: center;
+  margin-top: 2rem;
+  &Link {
+    // color: $linkBlue;
+    font-size: 1rem;
+    &:hover {
+      // color: $materialBlue;
+    }
+  }
+  &Label {
+    font-size: 1.3rem;
+    font-size: 1rem;
+    font-family: Poppins;
+    font-weight: bold;
+    color: $mediumGray;
+    font-weight: 400;
+  }
+}
+
+.providers {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btnTwitter {
+  margin: 0px 5px;
+}

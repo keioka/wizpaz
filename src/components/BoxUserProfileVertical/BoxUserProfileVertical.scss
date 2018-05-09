@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2rem;
+  font-family: Poppins;
+}
+
+.userProfileName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

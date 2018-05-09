@@ -1,0 +1,47 @@
+@import 'base';
+
+.container {
+  @extend .flex-column-center;
+  justify-content: flex-start;
+  padding-top: 30px;
+  flex-grow: 2;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  opacity: 0;
+  .transition-appear {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  .transition-appear.transition-appear-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  .transition-leave {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .transition-leave.transition-leave-active {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.tiles {
+  @extend .flex-row-center;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.progress {
+  @extend .flex-column-center;
+  justify-content: flex-start;
+  padding-top: 30px;
+  flex-grow: 2;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  padding-left: 5%;
+  padding-right: 5%;
+}

@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 2rem;
+  font-family: Poppins;
+}
+
+.listTag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  cursor: pointer;
+  background: #dedede;
+  border-radius: 40px;
+  transition: all 0.2s ease;
+  margin-right: 10px;
+  color: #4c4c4c;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.listRequests {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.itemUser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.itemUserMessage {
+  margin-left: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}

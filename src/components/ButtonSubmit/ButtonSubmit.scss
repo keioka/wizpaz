@@ -1,0 +1,32 @@
+@import 'base';
+
+.container {
+  background-color: $color-main;
+  cursor: pointer;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 0.9rem;
+  height: 58px;
+  padding: 5px 0px;
+  width: 100%;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  text-transform: uppercase;
+  transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+}
+
+.container:hover {
+  // background-color: lighten($color-main, 10%);
+// }
+  box-shadow: 0 0 1px 15px rgba(#dadada, 0.4),
+    0 0 1px 30px rgba(#dadada, 0.1),
+    0 0 1px 45px rgba(#dadada, 0.1);
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

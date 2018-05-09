@@ -1,0 +1,38 @@
+@import 'base';
+
+.icon {
+  transform: scale(0.7);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  height: 58px;
+  border-radius: 4px;
+  color: white;
+  font-family: Poppins;
+  width: 50%;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.colorTwitter {
+  background-color: #00aced;
+}
+
+.colorFacebook {
+  background-color: #3B5998;
+}
